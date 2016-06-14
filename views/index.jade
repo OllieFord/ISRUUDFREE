@@ -1,0 +1,26 @@
+﻿doctype html
+html
+  head
+    title= IsRuudFree
+    link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous")
+    link(rel="stylesheet" href="styling.css")
+
+    if(isfree)
+        style.
+            body {
+                background-color: #C5E99B;
+            }
+    else
+        style.
+            body {
+                background-color: #F16B6F;
+            }
+            
+  body
+    .container.stylish
+        h1 Is Ruud Free?
+        if(isfree) 
+            p#isfree Yes 
+        else 
+            p#isfree No
+        p#description This handy website will let you know whether or not Ruud is free to chat! 
